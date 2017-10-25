@@ -1,0 +1,22 @@
+{
+    "name": "try/predict-exception",
+    "description": "Simplified predictions if a piece of codes throws an Exception",
+    "type": "library",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Willi Eßer",
+            "email": "willi.esser@troublete.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+    	"psr-4": {
+    		"TryPhp\\": "./src"
+    	}
+    },
+    "scripts": {
+    	"test": "@php test.php"
+    },
+    "require": {}
+}
