@@ -40,14 +40,14 @@ $assertions->predictException(function () {
 
 #### `predictException($capture, $exceptionClass)`
 
-Method to check if a given piece of code throws an Exception of the expected type.
+Method to check if a given piece of code throws an Throwable of the expected type.
 
 ##### Arguments
 
 | Arguments | Type | Description |
 |---|---|---|
-| $capture | `callable` | Closure in which the Exception shall be thrown. |
-| $exceptionClass | `string` | Class of the Exception that is expected to be thrown. |
+| $capture | `callable` | Closure in which the Throwable shall be thrown. |
+| $exceptionClass | `string` | Class of the Throwable that is expected to be thrown. |
 
 ## License
 

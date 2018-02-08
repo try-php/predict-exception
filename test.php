@@ -27,6 +27,14 @@ try {
 
 try {
 	$executionClass->predictException(function () {
+		throw new TypeError('something happened');
+	}, \TypeError::class);	
+} catch (\Exception $ex) {
+	trigger_error('test failed', E_USER_ERROR);
+}
+
+try {
+	$executionClass->predictException(function () {
 		throw new Exception('something happened');
 	}, \RuntimeException::class);	
 } catch (\Exception $ex) {

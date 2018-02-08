@@ -15,7 +15,7 @@ trait PredictExceptionTrait
 		try {
 			call_user_func($capture);
 			throw new PredictExceptionFailure("Capture was expected to throw '$exceptionClass' but did not.");
-		} catch (\Exception $ex) {	
+		} catch (\Throwable $ex) {	
 			$actualExceptionClass = get_class($ex);
 
 			if ($actualExceptionClass === PredictExceptionFailure::class) {
